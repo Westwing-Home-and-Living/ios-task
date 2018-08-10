@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ECB-m7-jYW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Networking Error View Controller-->
+        <scene sceneID="Q9U-1R-giA">
+            <objects>
+                <viewController id="ECB-m7-jYW" customClass="NetworkingErrorViewController" customModule="CampaignBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VUS-dS-XEO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ynh-LP-aSf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HoD-zj-qJt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qa6-tp-mhi" userLabel="InfoLabel">
+                                <rect key="frame" x="16" y="230" width="343" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y57-r9-mfj" userLabel="RetryButton">
+                                <rect key="frame" x="158" y="315" width="58" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.33164176839999998" green="0.30719974979999998" blue="0.3374959521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ynh-LP-aSf" firstAttribute="top" secondItem="y57-r9-mfj" secondAttribute="bottom" constant="316" id="9Ou-VV-b5P"/>
+                            <constraint firstItem="y57-r9-mfj" firstAttribute="top" secondItem="Qa6-tp-mhi" secondAttribute="bottom" constant="43" id="MSK-Jh-S12"/>
+                            <constraint firstItem="Qa6-tp-mhi" firstAttribute="centerX" secondItem="y57-r9-mfj" secondAttribute="centerX" id="OIN-U3-Mc2"/>
+                            <constraint firstItem="Qa6-tp-mhi" firstAttribute="leading" secondItem="HoD-zj-qJt" secondAttribute="leadingMargin" id="Q6e-wY-6ef"/>
+                            <constraint firstItem="Qa6-tp-mhi" firstAttribute="trailing" secondItem="HoD-zj-qJt" secondAttribute="trailingMargin" id="mWZ-bh-Cm5"/>
+                            <constraint firstItem="y57-r9-mfj" firstAttribute="centerY" secondItem="HoD-zj-qJt" secondAttribute="centerY" id="pkv-kd-Xlx"/>
+                            <constraint firstItem="Qa6-tp-mhi" firstAttribute="top" secondItem="VUS-dS-XEO" secondAttribute="bottom" constant="210" id="xba-gA-nFz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="Qa6-tp-mhi" id="4jE-HG-Fqu"/>
+                        <outlet property="retryButton" destination="y57-r9-mfj" id="f8N-t8-cAH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oue-kh-LEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759.20000000000005" y="-3634.6326836581711"/>
+        </scene>
+    </scenes>
+</document>
