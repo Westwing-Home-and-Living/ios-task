@@ -29,21 +29,21 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="283"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3t-mf-lUQ">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3t-mf-lUQ">
                                             <rect key="frame" x="8" y="8" width="359" height="269.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="h3t-mf-lUQ" secondAttribute="height" multiplier="4:3" id="XiH-2N-3VL"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiC-pw-PH8" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="234.5" width="44.5" height="20.5"/>
+                                            <rect key="frame" x="16" y="226.5" width="343" height="20.5"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKV-MD-vzF" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="255" width="359" height="12"/>
+                                            <rect key="frame" x="16" y="255" width="343" height="12"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="8"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="12"/>
@@ -54,12 +54,13 @@
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="trailingMargin" secondItem="h3t-mf-lUQ" secondAttribute="trailing" id="0Qv-Ly-s5x"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="iKV-MD-vzF" secondAttribute="trailing" id="4FB-dA-Inc"/>
-                                    <constraint firstItem="iKV-MD-vzF" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leadingMargin" id="760-sQ-xsE"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="iKV-MD-vzF" secondAttribute="trailing" constant="8" id="4FB-dA-Inc"/>
+                                    <constraint firstItem="iKV-MD-vzF" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leadingMargin" constant="8" id="760-sQ-xsE"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="iKV-MD-vzF" secondAttribute="bottom" constant="8" id="AgS-3w-y75"/>
-                                    <constraint firstItem="YiC-pw-PH8" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leadingMargin" id="PgD-gW-tZP"/>
-                                    <constraint firstItem="iKV-MD-vzF" firstAttribute="top" secondItem="YiC-pw-PH8" secondAttribute="bottom" id="QqG-b8-yhQ"/>
+                                    <constraint firstItem="YiC-pw-PH8" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leadingMargin" constant="8" id="PgD-gW-tZP"/>
+                                    <constraint firstItem="iKV-MD-vzF" firstAttribute="top" secondItem="YiC-pw-PH8" secondAttribute="bottom" constant="8" id="QqG-b8-yhQ"/>
                                     <constraint firstItem="h3t-mf-lUQ" firstAttribute="top" secondItem="Kec-Ca-5D8" secondAttribute="topMargin" id="bUW-eS-iVs"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="YiC-pw-PH8" secondAttribute="trailing" constant="8" id="onY-0X-3ca"/>
                                     <constraint firstItem="h3t-mf-lUQ" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leadingMargin" id="wC4-Bv-2Cj"/>
                                 </constraints>
                                 <size key="customSize" width="375" height="283"/>
