@@ -19,6 +19,7 @@ class CampaignListingViewController: UIViewController {
         super.viewDidLoad()
 
         assert(typedView != nil)
+        // Make the CollectionView cell size automatic
         if let typedViewLayout = typedView?.collectionViewLayout as? UICollectionViewFlowLayout {
             typedViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         }

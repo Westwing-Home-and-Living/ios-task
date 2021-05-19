@@ -49,6 +49,7 @@ class CampaignCell: UICollectionViewCell {
         assert(nameLabel != nil)
         assert(descriptionLabel != nil)
         assert(imageView != nil)
+        // Ensure CampaignCell width is the same as the device screen ensuring the cell will grow in heigth as needed
         contentView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
     }
 }
