@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,25 +26,25 @@
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="campaignCell" id="Kec-Ca-5D8" customClass="CampaignCell" customModule="CampaignBrowser" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="283"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OwE-ta-Asg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="283"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3t-mf-lUQ">
-                                            <rect key="frame" x="8" y="8" width="359" height="269.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="h3t-mf-lUQ" secondAttribute="height" multiplier="4:3" id="XiH-2N-3VL"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiC-pw-PH8" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
-                                            <rect key="frame" x="16" y="226.5" width="343" height="20.5"/>
+                                            <rect key="frame" x="8" y="226.5" width="359" height="20.5"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKV-MD-vzF" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
-                                            <rect key="frame" x="16" y="255" width="343" height="12"/>
+                                            <rect key="frame" x="8" y="255" width="359" height="12"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="8"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="12"/>
@@ -51,18 +52,18 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="trailingMargin" secondItem="h3t-mf-lUQ" secondAttribute="trailing" id="0Qv-Ly-s5x"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="iKV-MD-vzF" secondAttribute="trailing" constant="8" id="4FB-dA-Inc"/>
-                                    <constraint firstItem="iKV-MD-vzF" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leadingMargin" constant="8" id="760-sQ-xsE"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="iKV-MD-vzF" secondAttribute="bottom" constant="8" id="AgS-3w-y75"/>
-                                    <constraint firstItem="YiC-pw-PH8" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leadingMargin" constant="8" id="PgD-gW-tZP"/>
-                                    <constraint firstItem="iKV-MD-vzF" firstAttribute="top" secondItem="YiC-pw-PH8" secondAttribute="bottom" constant="8" id="QqG-b8-yhQ"/>
-                                    <constraint firstItem="h3t-mf-lUQ" firstAttribute="top" secondItem="Kec-Ca-5D8" secondAttribute="topMargin" id="bUW-eS-iVs"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="YiC-pw-PH8" secondAttribute="trailing" constant="8" id="onY-0X-3ca"/>
-                                    <constraint firstItem="h3t-mf-lUQ" firstAttribute="leading" secondItem="Kec-Ca-5D8" secondAttribute="leadingMargin" id="wC4-Bv-2Cj"/>
-                                </constraints>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="YiC-pw-PH8" secondAttribute="trailing" constant="8" id="3qI-1B-PEp"/>
+                                        <constraint firstItem="h3t-mf-lUQ" firstAttribute="leading" secondItem="OwE-ta-Asg" secondAttribute="leading" id="6yE-ff-lhl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iKV-MD-vzF" secondAttribute="bottom" constant="8" id="AgS-3w-y75"/>
+                                        <constraint firstAttribute="trailing" secondItem="h3t-mf-lUQ" secondAttribute="trailing" id="Dd1-oa-jMs"/>
+                                        <constraint firstItem="iKV-MD-vzF" firstAttribute="top" secondItem="YiC-pw-PH8" secondAttribute="bottom" constant="8" id="QqG-b8-yhQ"/>
+                                        <constraint firstItem="iKV-MD-vzF" firstAttribute="leading" secondItem="OwE-ta-Asg" secondAttribute="leading" constant="8" id="Wr3-im-eOE"/>
+                                        <constraint firstAttribute="trailing" secondItem="iKV-MD-vzF" secondAttribute="trailing" constant="8" id="Z3C-fE-gg2"/>
+                                        <constraint firstItem="h3t-mf-lUQ" firstAttribute="top" secondItem="OwE-ta-Asg" secondAttribute="top" id="ZJE-J3-7VY"/>
+                                        <constraint firstItem="YiC-pw-PH8" firstAttribute="leading" secondItem="OwE-ta-Asg" secondAttribute="leading" constant="8" id="o6o-UU-LbG"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
                                 <size key="customSize" width="375" height="283"/>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="iKV-MD-vzF" id="Zvs-Xr-6X8"/>
