@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OwE-ta-Asg">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="322"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3t-mf-lUQ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
@@ -37,30 +37,52 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiC-pw-PH8" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="281.5" width="359" height="20.5"/>
+                                            <rect key="frame" x="0.0" y="281.5" width="375" height="20.5"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="verticalPadding">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKV-MD-vzF" customClass="LabelWithPadding" customModule="CampaignBrowser" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="310" width="359" height="12"/>
+                                            <rect key="frame" x="0.0" y="302" width="375" height="20"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="verticalPadding">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="YiC-pw-PH8" secondAttribute="trailing" constant="8" id="3qI-1B-PEp"/>
+                                        <constraint firstAttribute="trailing" secondItem="YiC-pw-PH8" secondAttribute="trailing" id="3qI-1B-PEp"/>
                                         <constraint firstItem="h3t-mf-lUQ" firstAttribute="leading" secondItem="OwE-ta-Asg" secondAttribute="leading" id="6yE-ff-lhl"/>
                                         <constraint firstAttribute="trailing" secondItem="h3t-mf-lUQ" secondAttribute="trailing" id="Dd1-oa-jMs"/>
+                                        <constraint firstAttribute="trailing" secondItem="iKV-MD-vzF" secondAttribute="trailing" id="L8g-uX-JgC"/>
                                         <constraint firstAttribute="bottom" secondItem="iKV-MD-vzF" secondAttribute="bottom" id="Lw7-ku-dVa"/>
-                                        <constraint firstItem="iKV-MD-vzF" firstAttribute="top" secondItem="YiC-pw-PH8" secondAttribute="bottom" constant="8" id="QqG-b8-yhQ"/>
-                                        <constraint firstItem="iKV-MD-vzF" firstAttribute="leading" secondItem="OwE-ta-Asg" secondAttribute="leading" constant="8" id="Wr3-im-eOE"/>
-                                        <constraint firstAttribute="trailing" secondItem="iKV-MD-vzF" secondAttribute="trailing" constant="8" id="Z3C-fE-gg2"/>
+                                        <constraint firstItem="iKV-MD-vzF" firstAttribute="top" secondItem="YiC-pw-PH8" secondAttribute="bottom" id="QqG-b8-yhQ"/>
                                         <constraint firstItem="h3t-mf-lUQ" firstAttribute="top" secondItem="OwE-ta-Asg" secondAttribute="top" id="ZJE-J3-7VY"/>
-                                        <constraint firstItem="YiC-pw-PH8" firstAttribute="leading" secondItem="OwE-ta-Asg" secondAttribute="leading" constant="8" id="o6o-UU-LbG"/>
+                                        <constraint firstItem="iKV-MD-vzF" firstAttribute="leading" secondItem="OwE-ta-Asg" secondAttribute="leading" id="gDs-4h-TTM"/>
+                                        <constraint firstItem="YiC-pw-PH8" firstAttribute="leading" secondItem="OwE-ta-Asg" secondAttribute="leading" id="o6o-UU-LbG"/>
                                         <constraint firstItem="YiC-pw-PH8" firstAttribute="top" secondItem="h3t-mf-lUQ" secondAttribute="bottom" id="zdH-5C-G4Y"/>
                                     </constraints>
                                 </collectionViewCellContentView>
