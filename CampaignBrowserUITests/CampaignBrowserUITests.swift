@@ -22,7 +22,6 @@ class CampaignBrowserUITests: XCTestCase {
         XCTAssert(firstImage.frame.origin.x == imageOriginX, "Images should start at the beginning of the screen")
         XCTAssert(imageSize.width == screenSize.width, "Images should take all available width")
         XCTAssert((imageSize.height * imageRatio).rounded() == imageSize.width, "Images proportion should be 4:3")
-
     }
 
 }
