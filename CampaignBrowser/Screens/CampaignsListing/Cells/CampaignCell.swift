@@ -62,12 +62,5 @@ class CampaignCell: UICollectionViewCell {
     private func setUpConstraintOfContainer() {
         container.translatesAutoresizingMaskIntoConstraints = false
         container.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width).isActive = true
-        container.heightAnchor.constraint(greaterThanOrEqualToConstant: Constants.containerMiniHeight).isActive = true
-    }
-    
-    // MARK: - Constants
-
-    private enum Constants {
-        static let containerMiniHeight: CGFloat = 200
     }
 }
