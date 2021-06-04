@@ -9,6 +9,9 @@ class CampaignCell: UICollectionViewCell {
 
     private let disposeBag = DisposeBag()
 
+    /** Used to contain all of the components in the cell. */
+    @IBOutlet private(set) weak var container: UIView!
+    
     /** Used to display the campaign's title. */
     @IBOutlet private(set) weak var nameLabel: UILabel!
 
@@ -46,8 +49,25 @@ class CampaignCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        assert(container != nil)
         assert(nameLabel != nil)
         assert(descriptionLabel != nil)
         assert(imageView != nil)
+        
+        setUpConstraintOfContainer()
+    }
+    
+    // MARK: - Private Functions
+    
+    private func setUpConstraintOfContainer() {
+        container.translatesAutoresizingMaskIntoConstraints = false
+        container.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width).isActive = true
+        container.heightAnchor.constraint(greaterThanOrEqualToConstant: Constants.containerMiniHeight).isActive = true
+    }
+    
+    // MARK: - Constants
+
+    private enum Constants {
+        static let containerMiniHeight: CGFloat = 200
     }
 }

@@ -20,6 +20,7 @@ class CampaignListingView: UICollectionView {
         dataSource = campaignDataSource
         delegate = campaignDataSource
         strongDataSource = campaignDataSource
+        activateAutoSizing()
         reloadData()
     }
 
@@ -40,6 +41,14 @@ class CampaignListingView: UICollectionView {
         /** The cell which is used to display a campaign. */
         case campaignCell
     }
+    
+    // MARK: - Private Functions
+    
+    private func activateAutoSizing() {
+        guard let collectionViewLayout = collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        collectionViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+    }
+    
 }
 
 
