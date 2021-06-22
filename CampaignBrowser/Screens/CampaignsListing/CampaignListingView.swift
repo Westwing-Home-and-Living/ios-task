@@ -19,6 +19,9 @@ class CampaignListingView: UICollectionView {
         let campaignDataSource = ListingDataSource(campaigns: campaigns)
         dataSource = campaignDataSource
         delegate = campaignDataSource
+        if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        }
         strongDataSource = campaignDataSource
         reloadData()
     }
@@ -74,14 +77,9 @@ class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
             campaignCell.name = campaign.name
             campaignCell.descriptionText = campaign.description
         } else {
-            assertionFailure("The cell should a CampaignCell")
+            assertionFailure("The cell should be a CampaignCell")
         }
         return cell
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: 450)
     }
 
 }

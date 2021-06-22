@@ -18,6 +18,9 @@ class CampaignCell: UICollectionViewCell {
     /** The image view which is used to display the campaign's mood image. */
     @IBOutlet private(set) weak var imageView: UIImageView!
 
+    /** Used to set cell to full width of the screen */
+    @IBOutlet private(set) weak var contentViewWidthConstraint: NSLayoutConstraint!
+
     /** The mood image which is displayed as the background. */
     var moodImage: Observable<UIImage>? {
         didSet {
@@ -49,5 +52,7 @@ class CampaignCell: UICollectionViewCell {
         assert(nameLabel != nil)
         assert(descriptionLabel != nil)
         assert(imageView != nil)
+
+        contentViewWidthConstraint.constant = UIScreen.main.bounds.width
     }
 }
