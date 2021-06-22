@@ -18,4 +18,16 @@ class LabelWithPadding: UILabel {
         let originalSize = super.intrinsicContentSize
         return CGSize(width: originalSize.width + padding * 2, height: originalSize.height + padding * 2)
     }
+
+    override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+        let insets = UIEdgeInsets(
+            top: padding,
+            left: padding,
+            bottom: padding,
+            right: padding
+        )
+        let rect = bounds.inset(by: insets)
+
+        return super.textRect(forBounds: rect, limitedToNumberOfLines: numberOfLines)
+    }
 }

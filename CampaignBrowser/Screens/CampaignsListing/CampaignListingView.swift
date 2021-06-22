@@ -76,6 +76,7 @@ class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
             campaignCell.moodImage = campaign.moodImage
             campaignCell.name = campaign.name
             campaignCell.descriptionText = campaign.description
+            campaignCell.cellWidth = collectionView.bounds.width
         } else {
             assertionFailure("The cell should be a CampaignCell")
         }
