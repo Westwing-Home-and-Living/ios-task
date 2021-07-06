@@ -1,0 +1,13 @@
+## User settings
+xcuserdata/
+xcshareddata/
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
+
+# CocoaPods
+Pods/

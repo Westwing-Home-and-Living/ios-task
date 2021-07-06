@@ -15,11 +15,17 @@ protocol Request {
     var url: URL { get }
 }
 
-
 /**
 Responsible for handling the networking communication.
 */
-class NetworkingService {
+protocol NetworkingService {
+    func createObservableResponse<R: Request>(request: R) -> Observable<R.ResponseData>
+}
+
+/**
+Live implementation of the `NetworkingService`.
+*/
+class NetworkingServiceLive: NetworkingService {
 
     /** The URLSession instance which is used to handle the request. */
     private let urlSession: URLSession

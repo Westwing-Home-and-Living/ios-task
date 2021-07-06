@@ -50,6 +50,8 @@ class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
 
     /** The campaigns that need to be displayed. */
     let campaigns: [CampaignListingView.Campaign]
+    
+    lazy var sizeCalculator = CampaignListingCellSizeCalculator()
 
     /**
      Designated initializer.
@@ -81,11 +83,9 @@ class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: 450)
+        sizeCalculator.size(for: campaigns[indexPath.item], collectionView)
     }
-
 }
-
 
 
 /**

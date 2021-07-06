@@ -6,6 +6,12 @@ target 'CampaignBrowser' do
     pod 'RxSwift', '= 5.1.1'
     pod 'RxCocoa', '= 5.1.1'
     pod 'MapleBacon', '= 4.0.1'
+    pod 'SnapKit', '~> 5.0.0'
+end
+
+target 'CampaignBrowserTests' do
+  pod 'RxSwift', '= 5.1.1'
+  pod 'SnapshotTesting', '~> 1.9.0'
 end
 
 post_install do |installer|

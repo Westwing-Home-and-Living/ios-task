@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9D652FAA6BEE9A71078302 /* Pods_CampaignBrowserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B25DB6CC8331E8C797A437 /* Pods_CampaignBrowserTests.framework */; };
+		224BA0472694427300A4F743 /* String+Font+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BA0462694427300A4F743 /* String+Font+Size.swift */; };
+		224BA0492694430F00A4F743 /* CampaignListingCellSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BA0482694430F00A4F743 /* CampaignListingCellSizeCalculator.swift */; };
+		224BA05126944EA500A4F743 /* CampaignListingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BA05026944EA500A4F743 /* CampaignListingViewTests.swift */; };
+		224BA059269450EE00A4F743 /* MockNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BA058269450ED00A4F743 /* MockNetworking.swift */; };
+		224BA05B269452B800A4F743 /* CampaignListingFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224BA05A269452B800A4F743 /* CampaignListingFetcher.swift */; };
+		224BA060269454BE00A4F743 /* campaigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 224BA05D269454BE00A4F743 /* campaigns.json */; };
+		224BA061269454BE00A4F743 /* campaigns_long_text.json in Resources */ = {isa = PBXBuildFile; fileRef = 224BA05E269454BE00A4F743 /* campaigns_long_text.json */; };
+		224BA062269454BE00A4F743 /* campaigns_short_text.json in Resources */ = {isa = PBXBuildFile; fileRef = 224BA05F269454BE00A4F743 /* campaigns_short_text.json */; };
 		23F7B59A1F5958F300154DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7B5991F5958F300154DD9 /* AppDelegate.swift */; };
 		23F7B59F1F5958F300154DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F7B59D1F5958F300154DD9 /* Main.storyboard */; };
 		23F7B5A11F5958F300154DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F7B5A01F5958F300154DD9 /* Assets.xcassets */; };
@@ -24,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		224BA05326944EA500A4F743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23F7B58E1F5958F300154DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F7B5951F5958F300154DD9;
+			remoteInfo = CampaignBrowser;
+		};
 		23F7B5AB1F5958F400154DD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 23F7B58E1F5958F300154DD9 /* Project object */;
@@ -34,6 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05B25DB6CC8331E8C797A437 /* Pods_CampaignBrowserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampaignBrowserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		224BA0462694427300A4F743 /* String+Font+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Font+Size.swift"; sourceTree = "<group>"; };
+		224BA0482694430F00A4F743 /* CampaignListingCellSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignListingCellSizeCalculator.swift; sourceTree = "<group>"; };
+		224BA04E26944EA500A4F743 /* CampaignBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampaignBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		224BA05026944EA500A4F743 /* CampaignListingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignListingViewTests.swift; sourceTree = "<group>"; };
+		224BA05226944EA500A4F743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		224BA058269450ED00A4F743 /* MockNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworking.swift; sourceTree = "<group>"; };
+		224BA05A269452B800A4F743 /* CampaignListingFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignListingFetcher.swift; sourceTree = "<group>"; };
+		224BA05D269454BE00A4F743 /* campaigns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campaigns.json; sourceTree = "<group>"; };
+		224BA05E269454BE00A4F743 /* campaigns_long_text.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campaigns_long_text.json; sourceTree = "<group>"; };
+		224BA05F269454BE00A4F743 /* campaigns_short_text.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campaigns_short_text.json; sourceTree = "<group>"; };
 		23F7B5961F5958F300154DD9 /* CampaignBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampaignBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F7B5991F5958F300154DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F7B59E1F5958F300154DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,12 +80,22 @@
 		23F7B5DD1F59A71B00154DD9 /* CampaignData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignData.swift; path = Models/CampaignData.swift; sourceTree = "<group>"; };
 		23F7B5DF1F59A73000154DD9 /* CampaignListingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CampaignListingView.swift; path = Screens/CampaignsListing/CampaignListingView.swift; sourceTree = "<group>"; };
 		23F7B5E11F59A76A00154DD9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3C01EF1CD9DCC2DB15C1D50F /* Pods-CampaignBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampaignBrowserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampaignBrowserTests/Pods-CampaignBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
 		47520166195A4003183C8D8A /* Pods-CampaignBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampaignBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampaignBrowser/Pods-CampaignBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		6EE6F773D7D1702E9482B13D /* Pods_CampaignBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampaignBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6104822AB37FE1D2708E72 /* Pods-CampaignBrowserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampaignBrowserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampaignBrowserTests/Pods-CampaignBrowserTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFF862F2521D154547AA0BBB /* Pods-CampaignBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampaignBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampaignBrowser/Pods-CampaignBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		224BA04B26944EA500A4F743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9D652FAA6BEE9A71078302 /* Pods_CampaignBrowserTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23F7B5931F5958F300154DD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,6 +114,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		224BA0452694426900A4F743 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				224BA0462694427300A4F743 /* String+Font+Size.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		224BA04F26944EA500A4F743 /* CampaignBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				224BA05C2694543500A4F743 /* Resources */,
+				224BA058269450ED00A4F743 /* MockNetworking.swift */,
+				224BA05026944EA500A4F743 /* CampaignListingViewTests.swift */,
+				224BA05226944EA500A4F743 /* Info.plist */,
+			);
+			path = CampaignBrowserTests;
+			sourceTree = "<group>";
+		};
+		224BA05C2694543500A4F743 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				224BA05E269454BE00A4F743 /* campaigns_long_text.json */,
+				224BA05F269454BE00A4F743 /* campaigns_short_text.json */,
+				224BA05D269454BE00A4F743 /* campaigns.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		23F7B58D1F5958F300154DD9 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +150,7 @@
 				23F7B5C91F597B7700154DD9 /* Podfile */,
 				23F7B5981F5958F300154DD9 /* CampaignBrowser */,
 				23F7B5AD1F5958F400154DD9 /* CampaignBrowserUITests */,
+				224BA04F26944EA500A4F743 /* CampaignBrowserTests */,
 				23F7B5971F5958F300154DD9 /* Products */,
 				92F3CB1E7C971469A2B28776 /* Pods */,
 				3AB6449F1A7DCBF82BA822FD /* Frameworks */,
@@ -95,6 +162,7 @@
 			children = (
 				23F7B5961F5958F300154DD9 /* CampaignBrowser.app */,
 				23F7B5AA1F5958F400154DD9 /* CampaignBrowserUITests.xctest */,
+				224BA04E26944EA500A4F743 /* CampaignBrowserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +170,7 @@
 		23F7B5981F5958F300154DD9 /* CampaignBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				224BA0452694426900A4F743 /* Utils */,
 				23F7B5D21F59983200154DD9 /* Components */,
 				23F7B5CB1F5981D300154DD9 /* Services */,
 				23F7B5C21F596CC300154DD9 /* Models */,
@@ -138,6 +207,7 @@
 				23F7B5BF1F595E5500154DD9 /* Cells */,
 				23F7B5DF1F59A73000154DD9 /* CampaignListingView.swift */,
 				23F7B5BB1F595A1800154DD9 /* CampaingListingViewController.swift */,
+				224BA0482694430F00A4F743 /* CampaignListingCellSizeCalculator.swift */,
 			);
 			name = CampaignListing;
 			sourceTree = "<group>";
@@ -164,6 +234,7 @@
 				23F7B5D71F59A70E00154DD9 /* ImageService.swift */,
 				23F7B5D81F59A70E00154DD9 /* NetworkingService.swift */,
 				23F7B5D91F59A70E00154DD9 /* ServiceLocator.swift */,
+				224BA05A269452B800A4F743 /* CampaignListingFetcher.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -180,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE6F773D7D1702E9482B13D /* Pods_CampaignBrowser.framework */,
+				05B25DB6CC8331E8C797A437 /* Pods_CampaignBrowserTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +261,8 @@
 			children = (
 				EFF862F2521D154547AA0BBB /* Pods-CampaignBrowser.debug.xcconfig */,
 				47520166195A4003183C8D8A /* Pods-CampaignBrowser.release.xcconfig */,
+				8F6104822AB37FE1D2708E72 /* Pods-CampaignBrowserTests.debug.xcconfig */,
+				3C01EF1CD9DCC2DB15C1D50F /* Pods-CampaignBrowserTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -196,6 +270,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		224BA04D26944EA500A4F743 /* CampaignBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 224BA05726944EA500A4F743 /* Build configuration list for PBXNativeTarget "CampaignBrowserTests" */;
+			buildPhases = (
+				B0F5D6EAA58D163724BC6B2F /* [CP] Check Pods Manifest.lock */,
+				224BA04A26944EA500A4F743 /* Sources */,
+				224BA04B26944EA500A4F743 /* Frameworks */,
+				224BA04C26944EA500A4F743 /* Resources */,
+				51A9AE9F39EEAD1109C29550 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				224BA05426944EA500A4F743 /* PBXTargetDependency */,
+			);
+			name = CampaignBrowserTests;
+			productName = CampaignBrowserTests;
+			productReference = 224BA04E26944EA500A4F743 /* CampaignBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		23F7B5951F5958F300154DD9 /* CampaignBrowser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23F7B5B31F5958F400154DD9 /* Build configuration list for PBXNativeTarget "CampaignBrowser" */;
@@ -239,10 +333,15 @@
 		23F7B58E1F5958F300154DD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Westwing GmbH";
 				TargetAttributes = {
+					224BA04D26944EA500A4F743 = {
+						CreatedOnToolsVersion = 12.5.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 23F7B5951F5958F300154DD9;
+					};
 					23F7B5951F5958F300154DD9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = Y2NQ6FJX24;
@@ -273,11 +372,22 @@
 			targets = (
 				23F7B5951F5958F300154DD9 /* CampaignBrowser */,
 				23F7B5A91F5958F400154DD9 /* CampaignBrowserUITests */,
+				224BA04D26944EA500A4F743 /* CampaignBrowserTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		224BA04C26944EA500A4F743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224BA062269454BE00A4F743 /* campaigns_short_text.json in Resources */,
+				224BA061269454BE00A4F743 /* campaigns_long_text.json in Resources */,
+				224BA060269454BE00A4F743 /* campaigns.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23F7B5941F5958F300154DD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,6 +426,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		51A9AE9F39EEAD1109C29550 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CampaignBrowserTests/Pods-CampaignBrowserTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotTesting.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CampaignBrowserTests/Pods-CampaignBrowserTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		928D197F2B3EC2A944182FC0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +457,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -334,28 +465,63 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CampaignBrowser/Pods-CampaignBrowser-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B0F5D6EAA58D163724BC6B2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CampaignBrowserTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		224BA04A26944EA500A4F743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224BA05126944EA500A4F743 /* CampaignListingViewTests.swift in Sources */,
+				224BA059269450EE00A4F743 /* MockNetworking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23F7B5921F5958F300154DD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				23F7B5DC1F59A70E00154DD9 /* ServiceLocator.swift in Sources */,
 				23F7B59A1F5958F300154DD9 /* AppDelegate.swift in Sources */,
+				224BA05B269452B800A4F743 /* CampaignListingFetcher.swift in Sources */,
 				23F7B5DB1F59A70E00154DD9 /* NetworkingService.swift in Sources */,
 				23F7B5C61F596F7F00154DD9 /* CampaignCell.swift in Sources */,
+				224BA0472694427300A4F743 /* String+Font+Size.swift in Sources */,
 				23F7B5BC1F595A1800154DD9 /* CampaingListingViewController.swift in Sources */,
 				23F7B5D61F59985300154DD9 /* LabelWithPadding.swift in Sources */,
 				23F7B5E01F59A73000154DD9 /* CampaignListingView.swift in Sources */,
 				23F7B5DE1F59A71B00154DD9 /* CampaignData.swift in Sources */,
 				23F7B5DA1F59A70E00154DD9 /* ImageService.swift in Sources */,
+				224BA0492694430F00A4F743 /* CampaignListingCellSizeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +536,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		224BA05426944EA500A4F743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F7B5951F5958F300154DD9 /* CampaignBrowser */;
+			targetProxy = 224BA05326944EA500A4F743 /* PBXContainerItemProxy */;
+		};
 		23F7B5AC1F5958F400154DD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 23F7B5951F5958F300154DD9 /* CampaignBrowser */;
@@ -397,6 +568,53 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		224BA05526944EA500A4F743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F6104822AB37FE1D2708E72 /* Pods-CampaignBrowserTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CampaignBrowserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.westwingnow.CanpaignBrowserTests.CampaignBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampaignBrowser.app/CampaignBrowser";
+			};
+			name = Debug;
+		};
+		224BA05626944EA500A4F743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C01EF1CD9DCC2DB15C1D50F /* Pods-CampaignBrowserTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CampaignBrowserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.westwingnow.CanpaignBrowserTests.CampaignBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampaignBrowser.app/CampaignBrowser";
+			};
+			name = Release;
+		};
 		23F7B5B11F5958F400154DD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -571,6 +789,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		224BA05726944EA500A4F743 /* Build configuration list for PBXNativeTarget "CampaignBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				224BA05526944EA500A4F743 /* Debug */,
+				224BA05626944EA500A4F743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		23F7B5911F5958F300154DD9 /* Build configuration list for PBXProject "CampaignBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

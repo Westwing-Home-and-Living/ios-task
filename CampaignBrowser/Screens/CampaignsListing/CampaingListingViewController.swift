@@ -25,8 +25,8 @@ class CampaignListingViewController: UIViewController {
         super.viewWillAppear(animated)
 
         // Load the campaign list and display it as soon as it is available.
-        ServiceLocator.instance.networkingService
-            .createObservableResponse(request: CampaignListingRequest())
+        ServiceLocator.instance.campaignFetcher
+            .fetchCampaigns()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] campaigns in
                 guard let self = self else { return }

@@ -6,5 +6,7 @@ class ServiceLocator {
 
     lazy var imageService: ImageService = ImageService()
 
-    lazy var networkingService = NetworkingService(urlSession: URLSession.shared)
+    lazy var networkingService: NetworkingService = NetworkingServiceLive(urlSession: URLSession.shared)
+    
+    lazy var campaignFetcher: CampaignListingFetcher = CampaignListingFetcherLive()
 }

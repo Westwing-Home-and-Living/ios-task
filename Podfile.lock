@@ -6,11 +6,15 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+  - SnapshotTesting (1.9.0)
 
 DEPENDENCIES:
   - MapleBacon (= 4.0.1)
   - RxCocoa (= 5.1.1)
   - RxSwift (= 5.1.1)
+  - SnapKit (~> 5.0.0)
+  - SnapshotTesting (~> 1.9.0)
 
 SPEC REPOS:
   trunk:
@@ -18,13 +22,17 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SnapKit
+    - SnapshotTesting
 
 SPEC CHECKSUMS:
   MapleBacon: 51238c77f0c0a2fa796bd8698d321fbd3d05c3d7
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
 
-PODFILE CHECKSUM: 47580c5389bb437ade94d702fe4e748c74aee74b
+PODFILE CHECKSUM: faa4cdc93f1aabca348e935ae366c2f3a6df35b2
 
 COCOAPODS: 1.10.1
