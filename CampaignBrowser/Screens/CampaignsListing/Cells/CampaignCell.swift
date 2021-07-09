@@ -37,6 +37,7 @@ class CampaignCell: UICollectionViewCell {
         }
     }
 
+    /** The campaign's description. */
     var descriptionText: String? {
         didSet {
             descriptionLabel?.text = descriptionText
@@ -49,5 +50,22 @@ class CampaignCell: UICollectionViewCell {
         assert(nameLabel != nil)
         assert(descriptionLabel != nil)
         assert(imageView != nil)
+    }
+
+    override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
+        
+        /** Replace the height in the target size to allow the cell to flexibly compute its height */
+        var targetSize = targetSize
+        targetSize.width = UIScreen.main.bounds.width
+        targetSize.height = CGFloat.greatestFiniteMagnitude
+        
+        /** The .required horizontal fitting priority means the desired cell width (targetSize.width) will be preserved. However, the vertical fitting priority is .fittingSizeLevel meaning the cell will find the height that best fits the content */
+        let size = super.systemLayoutSizeFitting(
+            targetSize,
+            withHorizontalFittingPriority: .required,
+            verticalFittingPriority: .fittingSizeLevel
+        )
+        
+        return size
     }
 }

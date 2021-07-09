@@ -6,16 +6,39 @@ import UIKit
  */
 @IBDesignable
 class LabelWithPadding: UILabel {
-
-    /** The padding (in points). Will be added to all edges. */
-    @IBInspectable var padding: CGFloat = 8
-
-    override func drawText(in rect: CGRect) {
-        super.drawText(in: rect.inset(by: UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)))
+    
+    /** The padding (in points). Will be added to left and right edges. */
+    @IBInspectable var padding: CGFloat{
+        set{
+            textEdgeInsets.right = newValue
+            textEdgeInsets.left = newValue
+        }
+        get{
+            return self.padding
+        }
     }
-
-    override var intrinsicContentSize: CGSize {
-        let originalSize = super.intrinsicContentSize
-        return CGSize(width: originalSize.width + padding * 2, height: originalSize.height + padding * 2)
+    
+    var textEdgeInsets = UIEdgeInsets.zero {
+        didSet {
+            invalidateIntrinsicContentSize()
+        }
+    }
+    
+    override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+        let textRect = super.textRect(
+            forBounds: bounds.inset(by: textEdgeInsets),
+            limitedToNumberOfLines: numberOfLines
+        )
+        let invertedInsets = UIEdgeInsets(
+            top: -textEdgeInsets.top,
+            left: -textEdgeInsets.left,
+            bottom: -textEdgeInsets.bottom,
+            right: -textEdgeInsets.right
+        )
+        return textRect.inset(by: invertedInsets)
+    }
+    
+    override func drawText(in rect: CGRect) {
+        super.drawText(in: rect.inset(by: textEdgeInsets))
     }
 }
