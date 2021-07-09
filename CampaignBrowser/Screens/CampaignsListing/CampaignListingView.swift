@@ -16,6 +16,7 @@ class CampaignListingView: UICollectionView {
      Displays the given campaign list.
      */
     func display(campaigns: [Campaign]) {
+        collectionViewLayoutSetup()
         let campaignDataSource = ListingDataSource(campaigns: campaigns)
         dataSource = campaignDataSource
         delegate = campaignDataSource
@@ -23,6 +24,15 @@ class CampaignListingView: UICollectionView {
         reloadData()
     }
 
+    /**
+     Configures collectionView items size.
+     */
+    private func collectionViewLayoutSetup(){
+        if let layout = collectionViewLayout as? UICollectionViewFlowLayout{
+            layout.estimatedItemSize = CGSize(width: frame.width, height: 450)
+        }
+    }
+    
     struct Campaign {
         let name: String
         let description: String
@@ -78,12 +88,6 @@ class ListingDataSource: NSObject, UICollectionViewDataSource, UICollectionViewD
         }
         return cell
     }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: 450)
-    }
-
 }
 
 
